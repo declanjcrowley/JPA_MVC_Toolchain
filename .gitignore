@@ -22,12 +22,7 @@
 hs_err_pid*
 
 .mvn/
-mvnw
-mvnw.cmd
-pom.xml
 
 .classpath
 .project
 .settings/
-
-target/
