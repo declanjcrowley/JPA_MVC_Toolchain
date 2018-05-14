@@ -1,6 +1,5 @@
 package ie.cit.tutjpamvc;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -32,7 +31,7 @@ public class DataJpAandMvcApplication implements CommandLineRunner{
 
 	@Override
 	public void run(String... arg0) throws Exception {
-		
+		System.out.println("DJMA run()");
 		printAll();
 		/*
 		printMaleArtists();
