@@ -7,7 +7,6 @@ import org.springframework.web.servlet.ViewResolver;
 import org.springframework.web.servlet.config.annotation.
 DefaultServletHandlerConfigurer;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
-import org.springframework.web.servlet.config.annotation.ViewControllerRegistry;
 import org.springframework.web.servlet.config.annotation.
 WebMvcConfigurerAdapter;
 import org.springframework.web.servlet.view.
@@ -33,10 +32,5 @@ public class WebConfig extends WebMvcConfigurerAdapter {
 		configurer.enable();
 	}
 	
-	@Override
-	public void addViewControllers(ViewControllerRegistry registry) {
-		registry.addViewController("/hello").setViewName("hello");
-		registry.addViewController("/index").setViewName("index");
-		registry.addViewController("/success").setViewName("success");
-	}
+	
 }
